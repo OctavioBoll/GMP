@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-3">Servicios</h1>
+        <p class="lead">Cumpleaños y eventos rellenar formulario</p>
+        <hr class="my-2">
+        <p>More info</p>
+        <p class="lead">
+            <button class="btn btn-primary btn-lg" (click)=ActivarForm()>ver formulario</button>
+        </p>
+    </div>
+</div>
+<div class="container" *ngIf="mostrarForm == true">
+    <div class="jumbotron">
+        <div class="text text-center">
+            <h1>Formulario</h1><br><br>
+        </div>
+        <!-- Registro en Alta,Modificacion o Consulta -->
+        <form name='FormReg'>
+
+            <fieldset>
+                <!--campo nombre-->
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-2 col-sm-offset-2" for="Nombre">
+                        Nombre <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" />
+                    </div>
+                </div>
+
+                <!--campo precio-->
+                <div class="row form-group">
+                    <label class="col-form-label col-sm-2 col-sm-offset-2" for="Apellido">
+                        Apellido <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="text" name="Apellido" class="form-control" />
+                    </div>
+                </div>
+
+
+                <!--campo stock-->
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-2 col-sm-offset-2" for="Documento">
+                        Documento <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="text" name="Documento" class="form-control" />
+
+                    </div>
+                </div>
+
+                <!--campo codigodebarra-->
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-2 col-sm-offset-2" for="Descripcion">
+                        Descripcion <span class="text-danger">*</span>
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="text" name="Descripcion" class="form-control" />
+
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+        <div class="container ">
+            <button class="btn btn-primary float-right">enviar</button>
+        </div>
+    </div>
+</div>
