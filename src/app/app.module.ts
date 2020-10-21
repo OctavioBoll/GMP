@@ -10,6 +10,7 @@ import { AtraccionesComponent } from './atracciones/atracciones.component';
 import { InicioComponent } from './inicio/inicio.component';
 //import { FormularioComponent } from './formulario/formulario.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormularioComponent } from './formulario/formulario.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [CuerpoComponent]

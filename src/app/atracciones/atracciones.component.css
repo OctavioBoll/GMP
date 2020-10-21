@@ -7,10 +7,40 @@
     width: 300px;
     height: 400px;
     font-family: roboto;
+    
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.631);
-    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    background: rgba(38, 38, 38, 0.898);
+    
     text-align: center;
+}
+.cardA{
+    
+
+    
+    opacity: 0.9;
+    transition: opacity 0.1s ease-in-out;
+    -moz-transition: opacity 0.1s ease-in-out;
+    -webkit-transition: opacity 0.1s ease-in-out;
+    position: relative;
+    top:2px;
+    left: 2px ;
+    
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.439);
+    transition: 0.2s ease-in-out;
+}
+
+.cardA:hover{
+
+
+    opacity: 1.0;
+    transition: opacity .1s ease-in-out;
+    -moz-transition: opacity .1s ease-in-out;
+    -webkit-transition: opacity .1s ease-in-out;
+    position: relative;
+    top: -2px;
+    left: -2px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.72);
+    transition: 0.2s ease-in-out;
 }
 
 .image{

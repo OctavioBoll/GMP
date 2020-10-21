@@ -174,150 +174,29 @@
   </div>
 </div> -->
 
-<div class="container">
-  
+<div class="container" >
+
   <div class="row">
     
-    <div class="col-sm-12 col-md-6 col-lg-4">
-      <div class="container py-3">
-        <div class="card text-white">
-          <img class="card-img-top image img-fluid rounded" src="../../assets/img/combateLaser.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Combate laser</h4>
-            <ul class="card-text text-left">
-              <li>Capacidad: en la sala pueden participar hasta 10 personas.</li>
-              <li>Altura mínima: 1.10 metros.</li>
-              <li>Edad mínima: 7 años.</li>
-              <li>Período de mantenimiento: semanal.</li>
-            </ul>
+      <div *ngFor="let item of items"  >
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="container py-3 "  >
+            <div class="card text-white cardA  animate__animated animate__fadeIn">
+              <img class="card-img-top image img-fluid rounded" src="../../assets/img/{{item.Imagen}}" alt="" >
+              <div class="card-body"  >
+                <h4 class="card-title">{{item.Nombre}}</h4>
+                <ul class="card-text text-left"  >
+                  <li>Capacidad: {{item.Capacidad}}</li>
+                  <li>Altura mínima: {{item.AlturaMin}} metros..</li>
+                  <li>Edad mínima: {{item.EdadMin}} años.</li>
+                  <li>Período de mantenimiento: {{item.Mantenimiento}}</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="col-sm-12 col-md-6 col-lg-4">
-      <div class="container py-3">
-        <div class="card text-white">
-          <img class="card-img-top image img-fluid rounded" src="../../assets/img/montañaRusa.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Montaña rusa "el dolar"</h4>
-            <ul class="card-text text-left">
-              <li>Capacidad: 7 asientos dobles, 14 personas en total.</li>
-              <li>Altura mínima: 1.30 metros.</li>
-              <li>Edad mínima: 13 años.</li>
-              <li>Período de mantenimiento: diaria.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-12 col-md-6 col-lg-4">
-      <div class="container py-3">
-        <div class="card text-white ">
-          <img class="card-img-top image img-fluid rounded" src="../../assets/img/calesita.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title">La calesita “Tinkerbell”</h4>
-            <ul class="card-text text-left">
-              <li>Capacidad: 12</li>
-              <li>Altura mínima: no hay.</li>
-              <li>Edad mínima: 4 años.</li>
-              <li>Período de mantenimiento: cada 15 días.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
-
-  <div class="row">
-    <div class="col-sm-12 col-md-6 col-lg-4">
-      <div class="container py-3">
-        <div class="card text-white ">
-          <img class="card-img-top image img-fluid rounded" src="../../assets/img/trenFantasma.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title">El tren fantasma</h4>
-            <ul class="card-text text-left">
-              <li>Capacidad: 2 personas por carro, 8 carros.</li>
-              <li>Altura mínima: no hay.</li>
-              <li>Edad mínima: 5 años.</li>
-              <li>Período de mantenimiento: cada 15 días.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-    <div class="col-sm-12 col-md-6 col-lg-4">
-      <div class="container py-3">
-        <div class="card text-white ">
-          <img class="card-img-top image img-fluid rounded" src="../../assets/img/autosChocadores.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Autitos Chocadores</h4>
-            <ul class="card-text text-left">
-              <li>Capacidad: 20</li>
-              <li>Altura mínima: 1.20 metros.</li>
-              <li>Edad mínima: 10 años.</li>
-              <li>Período de mantenimiento: cada 15 días.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-12 col-md-6 col-lg-4">
-      <div class="container py-3">
-        <div class="card text-white ">
-          <img class="card-img-top image img-fluid rounded" src="../../assets/img/tazasGiratorias.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Las tacitas giratorias</h4>
-            <ul class="card-text text-left">
-              <li>Capacidad: 12 ,Las tacitas giratorias.</li>
-              <li>Altura mínima: 1.10 metros.</li>
-              <li>Edad mínima: 10 años.</li>
-              <li>Período de mantenimiento: cada 15 días.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-12 col-md-6 col-lg-4">
-      <div class="container py-3">
-        <div class="card text-white ">
-          <img class="card-img-top image img-fluid rounded" src="../../assets/img/telecombate.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Telecombate</h4>
-            <ul class="card-text text-left">
-              <li>Capacidad: 12 , cada una con 2 asientos.</li>
-              <li>Altura mínima: 1.20 metros.</li>
-              <li>Edad mínima: 12 años.</li>
-              <li>Período de mantenimiento: cada 7 dias.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-12 col-md-6 col-lg-4">
-      <div class="container py-3">
-        <div class="card text-white ">
-          <img class="card-img-top image img-fluid rounded" src="../../assets/img/barcoVikingo.jpg" alt="">
-          <div class="card-body">
-            <h4 class="card-title">Barco Vikingo</h4>
-            <ul class="card-text text-left">
-              <li>Capacidad: 24.</li>
-              <li>Altura mínima: 1.20 metros.</li>
-              <li>Edad mínima: 11 años.</li>
-              <li>Período de mantenimiento: cada 7 dias.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-  
 </div>
+
+<!-- (mouseover)="mostrar()" [@animacion]='estado' -->
