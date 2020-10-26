@@ -13,3 +13,26 @@
 .fondobanner{
     background: rgba(2, 1, 58, 0.933);
 }
+
+ #checkbox{
+     display: none;
+     width: 100%;
+     height: 100%;
+ }
+
+ .btn:focus{
+    outline: none;
+    box-shadow: none;
+ }
+
+ .flecha{
+     position: relative;
+     transform: rotate(0deg);
+     transition:.5s;
+ }
+
+
+input:checked + .flecha{
+    transform:rotateZ(180deg);
+    transition: 0.5s;
+}
