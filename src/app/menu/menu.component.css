@@ -4,3 +4,12 @@
     
 }
 
+.img{
+    position: relative;
+    width: 1670px;
+    display: block;
+    
+}
+.fondobanner{
+    background: rgba(2, 1, 58, 0.933);
+}
